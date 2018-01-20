@@ -906,7 +906,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4982254595882788}
-  - component: {fileID: 95613848641204272}
   m_Layer: 0
   m_Name: swat
   m_TagString: Untagged
@@ -973,6 +972,7 @@ GameObject:
   - component: {fileID: 114036485384736554}
   - component: {fileID: 114571097399480060}
   - component: {fileID: 114202574261705056}
+  - component: {fileID: 95895602527957184}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1503,13 +1503,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1854183656847460}
   m_LocalRotation: {x: 0, y: 0, z: 2.7084222e-35, w: 1}
-  m_LocalPosition: {x: -4.0753376e-16, y: 0.0434, z: 0.009269}
+  m_LocalPosition: {x: -4.7348803e-15, y: 0.04340005, z: 0.009268999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4589625450517306}
   m_Father: {fileID: 4156817661251358}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.0337603, y: -1.0942334, z: -0.52747}
 --- !u!4 &4265529304354074
 Transform:
   m_ObjectHideFlags: 1
@@ -2326,28 +2326,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!95 &95613848641204272
+--- !u!95 &95895602527957184
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1875846056769366}
+  m_GameObject: {fileID: 1915494631390822}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 13fd6dfb7fa774c44a3ebfeacbff648d, type: 3}
   m_Controller: {fileID: 9100000, guid: 08715bb026935da4393a14f9263e4cb0, type: 2}
-  m_CullingMode: 1
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: "\nBinding warning: Some generic clip(s) use transforms that are
-    already bound by a Humanoid avatar. These transforms can only be changed by Humanoid
-    clips.\n\tTransform 'swat:Hips'\n\tTransform 'swat:RightHandIndex1'\n\tTransform
-    'swat:LeftToeBase'\n\tTransform 'swat:LeftShoulder'\n\tTransform 'swat:Head'\n\tTransform
-    'swat:LeftLeg'\n\tTransform 'swat:RightHandMiddle1'\n\tTransform 'swat:RightShoulder'\n\tTransform
-    'swat:LeftHandIndex1'\n\tTransform 'swat:RightHandRing2'\n\tand more ...\n\tFrom
-    animation clip 'Rifle Idle'\n\tFrom animation clip 'Rifle Run'\n\tFrom animation
-    clip 'Firing Rifle'"
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114036485384736554
@@ -2402,7 +2395,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.4
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}

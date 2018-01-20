@@ -5,7 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour {
 
     [SerializeField] int maximumHealth = 50;
-    int currentHealth;
+    public int currentHealth;
 
     Animator anim;
 
@@ -21,13 +21,18 @@ public class Health : MonoBehaviour {
 
     public void TakeDamage(int damage)
     {
-        print(gameObject.name + " took " + damage);
         currentHealth -= damage;
         print(currentHealth);
         if(currentHealth <= 0)
         {
+            //Disable capsule collider
             //Destroy(gameObject);
             anim.SetTrigger("Die");
         }
+    }
+
+    public float HealthAsPercentage
+    {
+        get { return (float)currentHealth / maximumHealth; }
     }
 }

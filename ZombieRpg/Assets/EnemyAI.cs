@@ -22,8 +22,12 @@ public class EnemyAI : MonoBehaviour
     {
         if (CanSeePlayer())
         {
-            //agent.SetDestination(player.transform.position);
-            //anim.SetBool("IsMoving", true);
+            agent.SetDestination(player.transform.position);
+            anim.SetBool("IsMoving", true);
+        }
+        else
+        {
+            anim.SetBool("IsMoving", false);
         }
     }
 

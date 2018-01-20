@@ -15,7 +15,7 @@ public class PlayerAttack : CharacterAttack {
 
     private void Awake()
     {
-        anim = GetComponentInChildren<Animator>();
+        anim = GetComponent<Animator>();
         fireTimer = weaponCooldown;
     }
 
